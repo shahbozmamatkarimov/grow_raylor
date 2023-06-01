@@ -12,11 +12,8 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="flex mx" :class="{ 'flex-col': res.width < 992 }">
-    <div
-      class="flex about justify-center"
-      :class="{ 'flex-wrap w-3': res.width > 992 }"
-    >
+  <div class="flex mx pad" :class="{ 'flex-col': res.width < 992 }">
+    <div class="flex about justify-center" :class="{ 'w-3': res.width > 992 }">
       <div class="text-center box-shadow p-10">
         <h1 class="fb">Adnan</h1>
         <h3>Outreacher And Organiser</h3>
@@ -50,7 +47,7 @@ onMounted(() => {
 
     <div
       class="flex w-60 flex-col m-auto items-center justify-center"
-      :class="{ 'flex-wrap w-full': res.width <= 992 }"
+      :class="{ 'w-full': res.width <= 992 }"
     >
       <div class="about2">
         <div>
@@ -78,7 +75,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="about3 w-full flex justify-center gap flex-wrap">
+    <div class="about3 w-full flex justify-center gap">
       <img src="../assets/svg/facebookads.svg" alt="img" />
       <img src="../assets/svg/googleads.svg" alt="img" />
       <img src="../assets/svg/tiktok.svg" class="tiktok" alt="img" />
@@ -136,7 +133,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .about{
+  .about {
     max-width: 30%;
   }
 }

@@ -42,7 +42,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <section class="flex">
+    <section class="mainflex">
       <div class="halfleft contain">
         <div>
           <h1 class="title fb line-height c-t-shadow">
@@ -59,7 +59,7 @@ onMounted(() => {
             Digital Marketing <span class="cblue f-lg">Agency</span> For
             Promotion
           </p>
-          <div class="flex justify-between pad btn-group">
+          <div class="flex justify-between pad btn-group min-w">
             <button class="min-w ready bgyellow cblue box-shadow">
               GET READY
             </button>
@@ -204,9 +204,7 @@ onMounted(() => {
         these types of businesses! We specialise in one to study your market and
         offer the best possible marketing.
       </p>
-      <div
-        class="section3 flex justify-center items-center w-70 m-auto mb-100 pad"
-      >
+      <div class="section3 justify-center items-center w-70 m-auto mb-100 pad">
         <div class="w-3">
           <div class="box-shadow min-h w-70 bgwhite cblack border-top">
             <img
@@ -289,8 +287,8 @@ onMounted(() => {
   border: 3px solid #0094ff;
 }
 
-.halfleft {
-  width: 40%;
+.mainflex {
+  display: flex;
 }
 
 .info,
@@ -307,8 +305,6 @@ onMounted(() => {
 
 .content {
   padding-top: 100px;
-  padding-right: 50px;
-  gap: 50px;
   margin: 0 auto;
 }
 .box {
@@ -409,6 +405,7 @@ onMounted(() => {
 
 .section3 {
   padding-left: 30px;
+  display: flex;
 }
 
 .amplifier {
@@ -436,6 +433,10 @@ onMounted(() => {
     width: 90% !important;
   }
 
+  .content {
+    padding-right: 50px;
+  }
+
   .bgimage {
     margin-left: 0;
   }
@@ -443,9 +444,10 @@ onMounted(() => {
     position: absolute;
     right: 0;
     z-index: -1;
+    opacity: 20%;
   }
   .halfleft {
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -455,17 +457,12 @@ onMounted(() => {
     flex-direction: column;
     width: 100% !important;
   }
+
+  .content{
+  gap: 50px;
+  }
   .section3 .w-3 {
     margin-top: 40px;
-  }
-}
-
-@media (max-width: 860px) {
-  .halfleft {
-    width: 80%;
-  }
-  .halfright {
-    opacity: 20%;
   }
 }
 
