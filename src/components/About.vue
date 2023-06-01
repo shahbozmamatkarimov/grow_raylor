@@ -90,8 +90,8 @@ onMounted(() => {
   margin: 20px 0;
 }
 .about div {
-  max-width: 40vh;
-  min-width: 40vh;
+  max-width: 400px;
+  min-width: 250px;
   font-size: 10px !important;
   line-height: 21px;
 }
