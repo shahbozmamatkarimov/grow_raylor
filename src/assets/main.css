@@ -1,0 +1,314 @@
+@import './base.css';
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slider:active {
+    background: grey !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.underline {
+    text-decoration: none;
+}
+
+.flex {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-evenly;
+}
+
+.justify-end {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+
+.items-end {
+    align-items: end;
+}
+
+.gap {
+    gap: 50px;
+}
+
+.contain {
+    padding: 50px;
+}
+
+.p-10 {
+    padding: 15px 30px;
+}
+
+.margin {
+    margin: 50px;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.m-top {
+    margin-top: 25px;
+}
+
+.m-x {
+    margin: 50px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad {
+    padding: 30px 0 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.f-sm {
+    font-size: 15px;
+}
+
+.fs-md {
+    font-size: 18px;
+}
+
+.fs-lg {
+    font-size: 30px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.bgblue {
+    background: #0094FF;
+}
+
+.bgyellow {
+    background: #FFE500;
+}
+
+.bgwhite {
+    background: #FFFFFF;
+}
+
+.cblue {
+    color: #0094FF;
+}
+
+.bgdarky {
+    background: #FFC300;
+}
+
+.cyellow {
+    color: #FFC300;
+}
+
+.cwhite {
+    color: #FFFFFF;
+}
+
+.cblack {
+    color: #000;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+.f-md {
+    font-weight: 500;
+}
+
+.f-lg {
+    font-weight: 700;
+}
+
+.fbr {
+    font-weight: bolder;
+}
+
+.br-lg {
+    border-radius: 30px;
+}
+
+
+.br-md {
+    border-radius: 10px;
+}
+
+.min-w {
+    min-width: fit-content;
+}
+
+.max-w {
+    max-width: fit-content;
+}
+
+.max-50 {
+    max-width: 50%;
+}
+
+.half-w {
+    width: 50%;
+}
+
+.w-30 {
+    width: 18%;
+}
+
+.w-3 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 80%;
+}
+
+.w-60 {
+    width: 50%;
+}
+
+.w-full {
+    width: 101%;
+}
+
+.min-h {
+    min-height: 600px;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.top {
+    top: 0;
+    width: 80%;
+}
+
+.top-10 {
+    top: 20px;
+}
+
+.left {
+    left: 0;
+}
+
+.left-8 {
+    left: 8rem;
+}
+
+.line-height {
+    line-height: 42px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.t-shadow {
+    text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.underline-b {
+    text-decoration: underline solid #0094FF 3px;
+}
+
+.underline-w {
+    text-decoration: underline solid #FFF 3px;
+}
+
+.underline-y {
+    text-decoration: underline solid #FFE500 3px;
+}
+
+.underline-d {
+    text-decoration: underline solid #000 3px;
+}
+
+.box-shadow {
+    box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 0.241);
+}
+
+.border-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* responsive */
+
+@media (max-width: 1400px) {
+    .w-3 {
+        width: 50%;
+    }
+
+    .w-30 {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .w-30 {
+        width: 30%;
+    }
+}
+
+/* responsive end */
